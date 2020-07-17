@@ -1,0 +1,18 @@
+HTTP Requests look like:
+    Get / HTTP/1.1
+    Host: www.google.com
+
+which translates to get root page of google.com by using HTTP1.1
+
+Responses look like:
+
+HTTP/1.1 200 Ok
+Content-Type : text/html
+
+Status codes : Meaning
+200 : Ok
+301 : Moved Permanently
+403 : Forbidden
+404 : Not Found
+500 : Internal Server Error
+
