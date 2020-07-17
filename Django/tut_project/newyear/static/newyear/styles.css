@@ -1,0 +1,13 @@
+h1 {
+    vertical-align: middle;
+    font-size: 250px;
+    text-align: center;
+}
+
+.no {
+    color:blueviolet;
+}
+
+.yes {
+    color: green
+}
