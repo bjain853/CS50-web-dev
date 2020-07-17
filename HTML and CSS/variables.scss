@@ -1,0 +1,30 @@
+$color: teal;
+div {
+    font-size: large;
+    p {
+        color: green;
+    }
+    ul {
+        color: red;
+    }
+}
+
+ul {
+    font-size: 14px;
+    color: $color;
+}
+
+ol {
+    font-size: 18px;
+    color: $color;
+}
+
+%message {
+    font-size: large;
+    font-weight: bold;
+}
+
+.success {
+    @extend %message;
+    background-color: red;
+}

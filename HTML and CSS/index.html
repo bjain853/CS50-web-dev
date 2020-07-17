@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Tags</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        td,
+        thead {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading_one">Hello World h1.1</h1>
+    <h1 class="bazz">Hello World h1.2</h1>
+    <h1>Hello World h1.3</h1>
+
+    <h2>Hello World h2 </h2>
+    <h3 class="bazz">Hello World h3 </h3>
+    <h4>Hello World h4</h4>
+    <h5>Hello World h5</h5>
+    <h6>Hello World h6</h6>
+
+    An ordererd List
+    <ol>
+        <li>Ordered list item</li>
+    </ol>
+    An unordered List
+    <ul>
+        <li>Unordered list item 1</li>
+    </ul>
+    A table
+    <div>
+        <table>
+            <thead>
+
+                <tr>
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Call sign</td>
+                </tr>
+
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Bhavya</td>
+                    <td>20</td>
+                    <td>Avenger</td>
+                </tr>
+                <tr>
+                    <td>Carol Denvers</td>
+                    <td>30</td>
+                    <td>Captain Marvel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    A complex form
+    <form>
+        <div>
+            <input type="text" name="name" placeholder="Full name">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <div>
+            <input type="radio" name="character" value="Batman">Batman
+            <input type="radio" name="character" value="Superman">Superman
+            <input type="radio" name="character" value="Thor">Thor
+            <input type="radio" name="character" value="Iron man">Iron man
+
+        </div>
+        <div>
+            <input name="country" list="countries" placeholder="Country">
+            <datalist id="countries">
+                <option value="USA">
+                <option value="India">
+                <option value="Canada">
+                <option value="Mexico">
+                <option value="UK">
+            </datalist>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
