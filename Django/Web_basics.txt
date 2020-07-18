@@ -16,3 +16,16 @@ Status codes : Meaning
 404 : Not Found
 500 : Internal Server Error
 
+We need to set form action to GET or POST to get or send data to server 
+respectively
+
+CSRF: Cross site request forgery
+This means another website can try to mimic the post/get request made
+by our website and interact with server which isn't secure
+To prevent CSRF we generate a token with each user sessions and when they submit 
+a form they also return the token.It's like pairing
+form's data with a secure key to validate the request is by our website and by
+a validated user.
+
+python manage.py migrate helps us to create default tables required for storing information by
+Django.

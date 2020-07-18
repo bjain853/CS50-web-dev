@@ -1,11 +1,13 @@
+ {% extends "todoApp/base.html" %} {% block body %}
+<h1>Add Tasks</h1>
+<form action="{% url 'add'%}" method="POST">
+    {%csrf_token%} {{form}}
+    <input type="submit">
+</form>
+<!--
 
-{% extends "todoApp/base.html" %}
-{% block body %}
-    <h1>Add Tasks</h1>
-    <form>
-        <input type="text" name="task" placeholder="What do you want to do?">
-        <input type="submit">
-    </form>
-    <a href="{% url 'index' %}">View tasks</a>
+    <input type="text" name="task" placeholder="What do you want to do?">
+    
 
-{% endblock %}
+-->
+<button><a href="{% url 'index' %}">View tasks</a></button> {% endblock %}

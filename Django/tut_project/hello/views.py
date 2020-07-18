@@ -6,7 +6,7 @@ def index(request):
     return render(request,"hello/index.html")
 
 def bhavya(request):
-    return HttpResponse("Hello Bhavya")
+    return HttpResponse("<h1>Hello Bhavya</h1>")
 
 def greet(request,name):
     return render(request,"hello/greet.html",{"name":name.capitalize()})

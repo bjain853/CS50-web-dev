@@ -1,11 +1,10 @@
-
-{% extends "todoApp/base.html" %}
-{% block body %}
-    <h1>Tasks</h1>
-    <ul>
+ {% extends "todoApp/base.html" %} {% block body %}
+<h1>Tasks</h1>
+<ul>
     {% for task in tasks %}
-        <li>{{task}}</li>
+    <li>{{task}}</li>
+    {% empty %}
+    <h1>No tasks</h1>
     {%endfor%}
-    </ul>
-    <a href="{% url 'add' %}">Add new task</a>
-{% endblock %}
+</ul>
+<button><a href="{% url 'add' %}">Add new task</a></button> {% endblock %}
