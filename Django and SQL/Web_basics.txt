@@ -1,3 +1,4 @@
+Web:
 HTTP Requests look like:
     Get / HTTP/1.1
     Host: www.google.com
@@ -29,3 +30,5 @@ a validated user.
 
 python manage.py migrate helps us to create default tables required for storing information by
 Django.
+
+SQL:
