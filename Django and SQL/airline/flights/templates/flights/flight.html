@@ -8,6 +8,11 @@
 
 </ul>
 
-
+<h2>Passengers</h2>
+<ul>
+    {% for passenger in passengers %}
+    <li>{{passenger.first}} {{passenger.last}}</li>
+    {% endfor %}
+</ul>
 
 {% endblock %}
