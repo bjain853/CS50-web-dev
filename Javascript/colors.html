@@ -6,29 +6,28 @@
     <title>Colours</title>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // document.querySelector('#red').onclick = () =>{
-        //    changeColor('red');
-        // }
-        // document.querySelector('#blue').onclick = () =>{
-        //    changeColor('blue');
-        // }
-        // document.querySelector('#green').onclick = () =>{
-        //    changeColor('green');
-        // }
+        
+         const select=document.querySelector("#colors");
+         select.onchange =()=>{
+            
+            document.querySelector('#hello').style.color = select.value;
 
-        const buttons = document.querySelectorAll("button");
-        buttons.forEach((button) => {
-          button.onclick = () => {
-            document.querySelector("#hello").style.color = button.dataset.color;
-          };
-        });
+        } 
+        //document.querySelector('#hello').style.color=
       });
     </script>
   </head>
   <body>
-    <h1 id="hello">Hello!</h1>
-    <button id="red" data-color="red">Red</button>
+    <h1 id="hello" style="text-align: center;font-size: 100px;font-family: cursive;">Hello!</h1>
+    <!-- <button id="red" data-color="red">Red</button>
     <button id="blue" data-color="blue">Blue</button>
-    <button id="green" data-color="green">Green</button>
+    <button id="green" data-color="green">Green</button> -->
+    <select id="colors">
+      <option value="black">Black</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="purple">Purple</option>
+    </select>
   </body>
 </html>
