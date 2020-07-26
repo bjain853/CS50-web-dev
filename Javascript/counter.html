@@ -4,23 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
-    <script>
-        let counter = 0;
-        function count(){
-            counter+=1;
-            //alert(counter)
-            if(counter % 10===0){
-                //console.log(counter)
-                alert(`Count is now ${counter}`)
-            }
-            document.querySelector('h1').innerHTML=counter
-
-        }
-    </script>
+    <script src="counter.js"></script>
 </head>
-<body style="align-content: center;">
-    <button onclick="count()">Increment counter</button>
-    <h1></h1>
+<body>
+    <h1>Counter</h1>
+    <button>Increment counter</button>
+    <h2>0</h2>
+    
     
 </body>
 </html>

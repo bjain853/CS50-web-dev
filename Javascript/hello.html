@@ -5,18 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
-    <script>
-        function hello() {
-            const currentHeading = document.querySelector('h1');
-            if (currentHeading.innerHTML === "Hello") {
-                currentHeading.innerHTML = "Goodbye"
-
-            } else {
-                currentHeading.innerHTML = "Hello"
-
-            }
-        }
-    </script>
+    <script src="hello.js"> </script>
     <style>
         button {
             align-items: center;
@@ -26,7 +15,11 @@
 
 <body>
     <h1 style="text-align: center;">Hello</h1>
-    <button onclick="hello()">Click here</button>
+    <form>
+        <input autofocus id="name" placeholder="Name" type="text">
+        <input type="submit">
+    </form>
+   <!-- <button onclick="hello()">Click here</button> -->
 </body>
 
 </html>
