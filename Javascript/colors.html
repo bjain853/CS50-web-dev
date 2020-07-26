@@ -6,19 +6,21 @@
     <title>Colours</title>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        const select = document.querySelector("#colors");
+        select.onchange = () => {
+          document.querySelector("#hello").style.color = select.value;
+        };
         
-         const select=document.querySelector("#colors");
-         select.onchange =()=>{
-            
-            document.querySelector('#hello').style.color = select.value;
-
-        } 
-        //document.querySelector('#hello').style.color=
       });
     </script>
   </head>
   <body>
-    <h1 id="hello" style="text-align: center;font-size: 100px;font-family: cursive;">Hello!</h1>
+    <h1
+      id="hello"
+      style="text-align: center; font-size: 100px; font-family: cursive;"
+    >
+      Hello!
+    </h1>
     <!-- <button id="red" data-color="red">Red</button>
     <button id="blue" data-color="blue">Blue</button>
     <button id="green" data-color="green">Green</button> -->
