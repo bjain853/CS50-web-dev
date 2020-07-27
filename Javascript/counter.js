@@ -13,7 +13,7 @@ function count() {
 
 document.addEventListener('DOMContentLoaded', () => {
     //document.querySelector('button').onclick=count;        
-    const id = setInterval(count, 100);
+    const id = setInterval(count, 1000);
 
     document.querySelector('button').addEventListener('click', () => {
         console.log(id);
